@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Teste Front-End GetNinjas</title>
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/global.css">
+
+    </head>
+
+    <body>
+
+        <header>
+        </header>
+
+        <main>
+            <div class="container">
+                <form>
+                    <fieldset class="fieldset" id="service">
+                        <div>
+                            <h2 class="main-title">Explique o que você precisa
+                                <small>Peça orçamento grátis, online</small>
+                            </h2>
+                        </div>
+
+                        <div id="service_inputs"></div>
+
+                        <button id="search_professionals">Buscar Profissionais</button>                    
+                    </fieldset>
+
+                    <fieldset id="user" class="hidden fieldset">
+
+                        <div>
+                            <h2 class="main-title">Estamos quase lá!
+                                <p>Não perca tempo ligando para vários profissionais. Preencha os dados abaixo e nós encontraremos os melhores para você!</p>
+                            </h2>
+                        </div>
+
+                        <div id="user_inputs"></div>
+                        
+
+                        <button id="finish">Finalizar</button>
+
+
+                    </fieldset>
+
+                </form>
+
+            </div>
+
+        </main>
+
+        <footer>
+
+        </footer>
+
+        <script src="js/controllers/IndexController.js"></script>
+        <script src="js/models/Form.js"></script>
+        <script src="js/services/Import.js"></script>
+        <script src="js/services/HttpService.js"></script>
+        <script src="js/views/IndexView.js"></script>
+
+        <script>
+            let controller = new IndexController()
+        </script>
+
+    </body>
+
+
+</html>
